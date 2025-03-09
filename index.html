@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Selectors Reference</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>jQuery</h1>
+  <h2>jQuery Selectors </h2>
+  <h3>محددات<span> jQuery </span></h3>
+  <strong>استخدم أداة<a href="https://www.w3schools.com/jquery/trysel.asp" > اختبارمحددات<span> jQuery </span></a>الخاصة بنا لتوضيح المحددات المختلفة</strong>
+  <table>
+    <thead>
+      <th>محدد</th> <th>مثال</th> <th>يختار</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="*.html" >*</a></td> <td>$("*")</td>
+        <td id="ar">جميع العناصر</td>
+      </tr> <tr>
+        <td><a href="#id" >#id</a></td> <td>$("#lastname")</td>
+        <td id="ar">العنصر ذو<bdi class="bdi">id = "lastname"</bdi> </td>
+      </tr> <tr>
+        <td><a href="" >.class</a></td> <td>$(".intro")</td>
+        <td id="ar">جميع العناصر ذات<i>الفئة="المقدمة"</i><bdi class="bdi">class="intro"</bdi></td>
+      </tr> <tr>
+        <td><a href="" >.class , .class</a></td> <td>$(".intro,.demo")</td>
+        <td id="ar">جميع العناصر ذات الفئة <span> "intro" </span> أو<span> "demo" </span><bdi class="bdi">class "intro" or "demo"</bdi></td>
+      </tr> <tr>
+        <td><a href="" >element</a></td> <td>$("p")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span></td>
+      </tr> <tr>
+        <td><a href="" >el1,el2,el3</a></td> <td>$("h1,div,p")</td>
+        <td id="ar">جميع عناصر<span> &lt;h1> </span> , <span> &lt;div> </span>و<span> &lt;p> </span></td>
+      </tr> <tr>
+        <td id="s"></td>  <td id="s"></td> <td id="s"></td>
+      </tr> <tr>
+        <td><a href="" >:first</a></td> <td>$("p:first")</td>
+        <td id="ar">العنصر الأول<span> &lt;p> </span></td>
+      </tr> <tr>
+        <td><a href="" >:last</a></td> <td>$("p:last")</td>
+        <td id="ar">العنصر الأخير<span> &lt;p> </span></td>
+      </tr> <tr>
+        <td><a href="" >:even</a></td> <td>$("tr:even")</td>
+        <td id="ar">جميع عناصر<span> &lt;tr> </span>الزوجية</td>
+      </tr> <tr>
+        <td><a href="" >:odd</a></td> <td>$("tr:odd")</td>
+      <td id="ar">جميع عناصر<span> &lt;tr> </span>الفردية</td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr> <tr>
+        <td><a href="" >:first-child</a></td> <td>$("p:first-child")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل الطفل الأول لوالدها</td>
+      </tr> <tr>
+        <td><a href="" >:first-of-type</a></td> <td>$("p:first-of-type")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تعد العنصر<span> &lt;p> </span>الأول من عنصرها الأصلي</td>
+      </tr> <tr>
+        <td><a href="" >:last-child</a></td> <td>$("p:last-child")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل الطفل الأخير لوالدها</td>
+      </tr> <tr>
+        <td><a href="" >:last-of-type</a></td> <td>$("p:last-of-type")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل آخر عنصر<span> &lt;p> </span>في الأصل</td>
+      </tr> <tr>
+        <td><a href="" >:nth-child(n)</a></td> <td>$("p:nth-child(2)")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل الطفل الثاني لوالدها</td>
+      </tr> <tr>
+        <td><a href="" >:nth-last-child(n)</a></td> <td>$("p:nth-last-child(2)")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل الطفل الثاني لوالدها، ويتم احتسابها من الطفل الأخير</td>
+      </tr> <tr>
+        <td><a href="" >:nth-of-type(n)</a></td> <td>$("p:nth-of-type(2)")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل عنصر<span> &lt;p> </span>الثاني من أصلها</td>
+      </tr> <tr>
+        <td><a href="" >:nth-last-of-type(n)</a></td> <td>$("p:nth-last-of-type(2)")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تمثل عنصر<span> &lt;p> </span>الثاني من أصلها، ويتم احتسابها من الطفل الأخير</td>
+      </tr> <tr>
+        <td><a href="" >:only-child</a></td> <td>$("p:only-child")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي هي الطفل الوحيد لوالدها</td>
+      </tr> <tr>
+        <td><a href="" >:only-of-type</a></td> <td>$("p:only-of-type")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي هي العنصر الفرعي الوحيد من نوعه من أصلها</td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr><tr>
+        <td><a href="" >parent > child</a></td> <td>$("div > p")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تعد فرعًا مباشرًا لعنصر<span> &lt;div> </span></td>
+      </tr> <tr>
+        <td><a href="" >parent descendant</a></td> <td>$("div p")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تنحدر من عنصر<span> &lt;div> </span></td>
+      </tr> <tr>
+        <td><a href="" >element + next</a></td> <td>$("div + p")</td>
+        <td id="ar">عنصر<span> &lt;p> </span>الموجود بجوار كل عنصر<span> &lt;div> </span></td>
+      </tr> <tr>
+        <td><a href="" >element ~ siblings</a></td> <td>$("div ~ p")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>التي تظهر بعد عنصر<span> &lt;div> </span></td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr><tr>
+        <td><a href="" >:eq(index)</a></td> <td>$("ul li:eq(3)")</td>
+        <td id="ar">العنصر الرابع في القائمة (يبدأ الفهرس عند 0)</td>
+      </tr> <tr>
+        <td><a href="" >:gt(no)</a></td> <td>$("ul li:gt(3)")</td>
+        <td id="ar">قائمة العناصر التي يزيد فهرسها عن 3</td>
+      </tr> <tr>
+        <td><a href="" >:lt(no)</a></td> <td>$("ul li:lt(3)")</td>
+        <td id="ar">قائمة العناصر ذات الفهرس الأقل من 3</td>
+      </tr> <tr>
+        <td><a href="" >:not(selector)</a></td> <td>$("input:not(:empty)")</td>
+        <td id="ar">جميع عناصر الإدخال غير فارغة</td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr><tr>
+        <td><a href="" >:header</a></td> <td>$(":header")</td>
+        <td id="ar">جميع عناصر الرأس<span> &lt;h1> , &lt;h2> ... </span></td>
+      </tr> <tr>
+        <td><a href="" >:animated</a></td> <td>$(":animated")</td>
+        <td id="ar">جميع العناصر المتحركة</td>
+      </tr> <tr>
+        <td><a href="" >:focus</a></td> <td>$(":focus")</td>
+        <td id="ar">العنصر الذي لديه التركيز حاليا</td>
+      </tr> <tr>
+        <td><a href="" >:contains(text)</a></td> <td>$(":contains('Hello')")</td>
+        <td id="ar">جميع العناصر التي تحتوي على النص<i> "مرحبا" </i><bdi class="bdi"> "Hello" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:has(selector)</a></td> <td>$("div:has(p)")</td>
+        <td id="ar">جميع عناصر<span> &lt;div> </span>التي تحتوي على عنصر<span> &lt;p> </span></td>
+      </tr> <tr>
+        <td><a href="" >:empty</a></td> <td>$(":empty")</td>
+        <td id="ar">جميع العناصر الفارغة</td>
+      </tr> <tr>
+        <td><a href="" >:parent</a></td> <td>$(":parent")</td>
+        <td id="ar">جميع العناصر التي هي أصل لعنصر آخر</td>
+      </tr> <tr>
+        <td><a href="" >:hidden</a></td> <td>$("p:hidden")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>المخفية</td>
+      </tr> <tr>
+        <td><a href="" >:visible</a></td> <td>$("table:visible")</td>
+        <td id="ar">جميع الجداول المرئية</td>
+      </tr> <tr>
+        <td><a href="" >:root</a></td> <td>$(":root")</td>
+        <td id="ar">عنصر الجذر في المستند</td>
+      </tr> <tr>
+        <td><a href="" >:lang(language)</a></td> <td>$("p:lang(de)")</td>
+        <td id="ar">جميع عناصر<span> &lt;p> </span>ذات قيمة سمة<bdi> lang </bdi>تبدأ بـ<bdi> "de" </bdi></td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr><tr>
+        <td><a href="" >[attribute]</a></td> <td>$("[href]")</td>
+        <td id="ar">جميع العناصر ذات السمة<bdi> href </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute=value]</a></td> <td>$("[href='default.htm']")</td>
+        <td id="ar">جميع العناصر ذات قيمة سمة<bdi> href </bdi>تساوي<bdi> "default.htm" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute!=value]</a></td> <td>$("[href!='default.htm']")</td>
+        <td id="ar">جميع العناصر ذات قيمة سمة<bdi> href </bdi>لا تساوي<bdi> "default.htm" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute$=value]</a></td> <td>$("[href$='.jpg']")</td>
+        <td id="ar">جميع العناصر ذات قيمة سمة<bdi> href </bdi>تنتهي بـ<bdi> ".jpg" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute|=value]</a></td> <td>$("[title|='Tomorrow']")</td>
+        <td id="ar">جميع العناصر ذات قيمة السمة<bdi> title </bdi>تساوي<bdi> Tomorrow </bdi>،أو تبدأ بـ<bdi> Tomorrow </bdi>متبوعة بواصلة</td>
+      </tr> <tr>
+        <td><a href="" >[attribute^=value]</a></td> <td>$("[title^='Tom']")</td>
+        <td id="ar">جميع العناصر التي لها قيمة سمة<bdi> title </bdi>تبدأ بـ<bdi> "Tom" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute~=value]</a></td> <td>$("[title~='hello']")</td>
+        <td id="ar">جميع العناصر التي لها قيمة سمة<bdi> title </bdi>تحتوي على الكلمة المحددة<bdi> "hello" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >[attribute*=value]</a></td> <td>$("[title*='hello']")</td>
+        <td id="ar">جميع العناصر التي لها قيمة سمة<bdi> title </bdi>تحتوي على كلمة<bdi> "hello" </bdi></td>
+      
+      </tr> <tr>
+        <td id="s"></td> <td id="s"></td> <td id="s"></td>
+      </tr><tr>
+        <td><a href="" >:input</a></td> <td>$(":input")</td>
+        <td id="ar">جميع عناصر الإدخال<bdi class="bdi"> input </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:text</a></td> <td>$(":text")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "نص"</bdi><bdi class="bdi"> type="text" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:password</a></td> <td>$(":password")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "كلمة المرور"</bdi><bdi class="bdi"> type="password" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:radio</a></td> <td>$(":radio")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "راديو"</bdi><bdi class="bdi"> type="radio", </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:checkbox</a></td> <td>$(":checkbox")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "مربع الاختيار"</bdi><bdi class="bdi"> type="checkbox" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:submit</a></td> <td>$(":submit")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi> النوع "إرسال"</bdi><bdi class="bdi"> type="submit" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:reset</a></td> <td>$(":reset")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "اعاده تعيين"</bdi><bdi class="bdi"> type="reset" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:button</a></td> <td>$(":button")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "زر"</bdi><bdi class="bdi"> type="button" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:image</a></td> <td>$(":image")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع "صورة"</bdi><bdi class="bdi"> type="image" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:file</a></td> <td>$(":file")</td>
+        <td id="ar">جميع عناصر الإدخال ذات<bdi>النوع = "ملف"</bdi><bdi class="bdi"> type ="file" </bdi></td>
+      </tr> <tr>
+        <td><a href="" >:enabled</a></td> <td>$(":enabled")</td>
+        <td id="ar">جميع عناصر الإدخال الممكّنة</td>
+      </tr> <tr>
+        <td><a href="" >:disabled</a></td> <td>$(":disabled")</td>
+        <td id="ar">جميع عناصر الإدخال المعطلة</td>
+      </tr> <tr>
+        <td><a href="" >:selected</a></td> <td>$(":selected")</td>
+        <td id="ar">جميع عناصر الإدخال المحددة</td>
+      </tr> <tr>
+        <td><a href="" >:checked</a></td> <td>$(":checked")</td>
+        <td id="ar">جميع عناصر الإدخال التي تم فحصها</td>
+      </tr>
+    </tbody>
+    
+  </table>
+  
+  <script src="main.js"></script>
+</body>
+</html>
